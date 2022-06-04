@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="importutil.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="util.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Doctor's</title>
 </head>
 
@@ -22,13 +23,15 @@
                 <h1>hub</h1>
             </div>
         </div>
-        <section class="menu"  onclick="open()">
-            <div class="open"></div>
-        </section>
-        <div class="lis" id="lis">
-            <section class="close" onclick="close()">
-                <div class="open"></div>
-            </section>
+        <div  onclick="menuopen()" class="openbtn btn">
+            <i class="fa fa-bars f2r"></i>
+        </div>
+        <!-- <button onclick="menuopen()" class="openbtn btn"> menu</button> -->
+        <div class="lis" id="main">
+            <div onclick="menuclose()" class="btn2 openbtn">
+                <i class="fa fa-close f2r"></i>
+                <!-- <button class="closebtn btn">close</button>-->
+            </div> 
             <a href="">
                 <li>About us</li>
             </a>
@@ -46,7 +49,6 @@
             </a>
         </div>
     </nav>
-
 
     <!-- section for landing page  -->
     <section class="main-page">
@@ -99,7 +101,7 @@
 
 
     <!-- -------------about us === -->
-    <section class="main-page">
+    <section class="main-page" id="aboutus">
         <div class="about-us">
             <h1>About us </h1>
             <p style="max-width: 600px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ex natus
@@ -146,56 +148,86 @@
             <h1 class="di">our best Doctor's</h1><br>
             <small>here is our best doctor profile</small>
         </div>
-<section class="doc-boc">
+        <section class="doc-boc">
 
-        <!-- ---- doctor info -------- -->
-        <div class="detail-doc flex-c">
-            <img src="img/doc2.png" alt="docotor pic">
-            <span class="m5">Dr. renu kumari</span>
-            <div class="m5">⭐⭐⭐⭐⭐</div>
-            <div class="btn-our-doc">
-                <button class="btn">Visit Profile</button>
-                <button class="btn2">Start chat</button>
+            <!-- ---- doctor info -------- -->
+            <div class="detail-doc flex-c">
+                <img src="img/doc2.png" alt="docotor pic">
+                <span class="m5">Dr. renu kumari</span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="btn-our-doc">
+                    <button class="btn">Visit Profile</button>
+                    <button class="btn2">Start chat</button>
+                </div>
             </div>
-        </div>
-        <!-- ------------------------ -->
-        <div class="detail-doc flex-c">
-            <img src="img/doc3.png" alt="docotor pic">
-            <span class="m5">Dr. madhu kumari</span>
-            <div class="m5">⭐⭐⭐⭐⭐</div>
-            <div class="btn-our-doc">
-                <button class="btn">Visit Profile</button>
-                <button class="btn2">Start chat</button>
+            <!-- ------------------------ -->
+            <div class="detail-doc flex-c">
+                <img src="img/doc3.png" alt="docotor pic">
+                <span class="m5">Dr. madhu kumari</span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="btn-our-doc">
+                    <button class="btn">Visit Profile</button>
+                    <button class="btn2">Start chat</button>
+                </div>
             </div>
-        </div>
-        <div class="detail-doc flex-c">
-            <img src="img/doct with pat.jpg" alt="docotor pic">
-            <span class="m5">Dr. jha kumar</span>
-            <div class="m5">⭐⭐⭐⭐⭐</div>
-            <div class="btn-our-doc">
-                <button class="btn">Visit Profile</button>
-                <button class="btn2">Start chat</button>
+            <div class="detail-doc flex-c">
+                <img src="img/doct with pat.jpg" alt="docotor pic">
+                <span class="m5">Dr. jha kumar</span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="btn-our-doc">
+                    <button class="btn">Visit Profile</button>
+                    <button class="btn2">Start chat</button>
+                </div>
             </div>
-        </div>
-        <div class="detail-doc flex-c">
-            <img src="img/doctor-female.jpg" alt="docotor pic">
-            <span class="m5">Dr. sulochna kumari</span>
-            <div class="m5">⭐⭐⭐⭐⭐</div>
-            <div class="btn-our-doc">
-                <button class="btn">Visit Profile</button>
-                <button class="btn2">Start chat</button>
+            <div class="detail-doc flex-c">
+                <img src="img/doctor-female.jpg" alt="docotor pic">
+                <span class="m5">Dr. sulochna kumari</span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="btn-our-doc">
+                    <button class="btn">Visit Profile</button>
+                    <button class="btn2">Start chat</button>
+                </div>
             </div>
-        </div>
-        <div class="detail-doc flex-c">
-            <img src="img/doctor-male.png" alt="docotor pic">
-            <span class="m5">Dr. jhony </span>
-            <div class="m5">⭐⭐⭐⭐⭐</div>
-            <div class="btn-our-doc">
-                <button class="btn">Visit Profile</button>
-                <button class="btn2">Start chat</button>
+            <div class="detail-doc flex-c">
+                <img src="img/doctor-male.png" alt="docotor pic">
+                <span class="m5">Dr. jhony </span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="btn-our-doc">
+                    <button class="btn">Visit Profile</button>
+                    <button class="btn2">Start chat</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     </section>
 
 
@@ -204,40 +236,100 @@
         <div>
             <h1>what client says about us</h1>
         </div>
-<div class="doc-boc">
-        <div class="txt-box">
-            <h1>Anushka shrma</h1>
-            <span>thank you for a great plasctic surgery</span>
-            <div class="m5 star">⭐⭐⭐⭐⭐</div>
-            <small>22/22/2222</small>
+        <div class="doc-boc">
+            <div class="txt-box">
+                <h1>Anushka shrma</h1>
+                <span>thank you for a great plasctic surgery</span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <small>22/22/2222</small>
+            </div>
+            <div class="txt-box">
+                <h1>virat kholi</h1>
+                <span>i got injury last night but thank you doctor for help me
+                    esse?</span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <small>22/22/2222</small>
+            </div>
+            <div class="txt-box">
+                <h1>mukesh ambani</h1>
+                <span>i have a lots of money but i dont get into a bigger hospital i love you </span>
+                <div class="m5 cl-orng">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <small>22/22/2222</small>
+            </div>
         </div>
-        <div class="txt-box">
-            <h1>virat kholi</h1>
-            <span>i got injury last night but thank you doctor for help me 
-                esse?</span>
-            <div class="m5 star">⭐⭐⭐⭐⭐</div>
-            <small>22/22/2222</small>
+    </section>
+
+    <!-- ------------contact us page ============0 -->
+
+    <section class="cont-page main-page flex-c">
+        <div class="flex-c">
+            <h1>get in touch </h1>
+            <span>contact us </span>
         </div>
-        <div class="txt-box">
-            <h1>mukesh ambani</h1>
-            <span>i have a lots of money but i dont get into a bigger hospital i love you </span>
-            <div class="m5 star">⭐⭐⭐⭐⭐</div>
-            <small>22/22/2222</small>
-        </div>
-    </div>
+            <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain" class="flex-c">
+            <section class="form-section">
+                <h1 class="tc"> Fill this form</h1>
+                <div class="input-box">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="input-box">
+                    <label for="gmail">Gamil <span>*</span></label>
+                    <input type="gmail" placeholder="Enter you Gmail"  maxlength="50" name="gmail" id="gmail" required>
+                </div>
+                <div class="input-box">
+                    <label for="number">Phone no. </label>
+                    <input type="number" placeholder="Enter 10 digit phone number" maxlength="10">
+                </div>
+                <div class="input-box">
+                    <label for="query">Query <span>*</span></label>
+                    <textarea class="focus" name="query" id="" cols="30" rows="10" placeholder="Enter you query here... " ></textarea>
+                </div>
+                <div class="input-box check flex">
+                    <input style="min-width: 20px;" type="checkbox" required> 
+                    <label for="checkbox"><a href="">  Term's and condition <span>*</span></a></label>
+                </div>
+            </section>
+            <button type="submit" value="submit" onclick="sendEmail()" class="btn">submit</button>
+            <!-- <input type="button" value="Submit" onclick="sendEmail()" class="btn"> -->
+        </form>
+        </form>
     </section>
 
     <!-- --------footer------------ -->
-  <section class="footer">
-<h1> Follow us on social media</h1>
-<div class="social-links">
+    <section class="footer">
+        <h1> Follow us on social media</h1>
+        <div class="social-links flex">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
 
-</div>
-  </section>
+        </div>
+    </section>
 
 
     <!-- <script> link s </script> -->
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>

@@ -22,6 +22,12 @@
 .m5{
     margin: 5px;
 }
+.cl-orng{
+    color: orange;
+}
+.f2r{
+    font-size: 2rem;
+}
 ::-webkit-scrollbar{
     width: 0px;
 }
