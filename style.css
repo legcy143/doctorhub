@@ -1,23 +1,26 @@
 :root {
     --blue: rgb(11, 158, 255);
     --blue-secondry: rgb(43, 170, 255);
-    --bg-color: rgb(240, 240, 240);
+    --bg-color: rgb(241, 241, 241);
     --gray: rgb(224, 224, 224);
     --gray-box: rgb(238, 238, 238);
 }
-
 * {
     font-family: 'popins', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* transition: 1s ease-in;
+    transition-delay: 0.1s; */
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
-    position: center center;
-    background-repeat: no-repeat;
-
 }
 
 .openbtn,
@@ -92,6 +95,7 @@ nav a:last-child {
 
 .text-doctor h1 {
     display: inline;
+    font-size: 2rem;
 }
 
 .text-doctor h1:nth-child(2) {
@@ -195,11 +199,16 @@ nav a:last-child {
 
 /* ===============about us === */
 .about-us {
+    margin: 20px;
     border: 0px solid red;
+   transition: 1s linear;
+   transition-delay: 0.10s;
 }
 
 .about-us a {
     text-decoration: none;
+    transition: 1s linear;
+    transition-delay: 0.10s;
 }
 
 .abt-img {
@@ -209,6 +218,8 @@ nav a:last-child {
 
 .abt-img img {
     width: 400px;
+    transition: 1s linear;
+    transition-delay: 0.10s;
 }
 
 .how-content {
@@ -352,7 +363,7 @@ form{
 }
 .input-box input:focus , .focus:focus{
     border: 2px solid var(--blue);
-    box-shadow: 0px 0px 4px blue;
+    box-shadow: 0px 0px 4px rgba(0, 0, 255, 0.479);
 }
 .input-box span{
     color: red;
@@ -370,6 +381,11 @@ form{
 }
 
 @media (max-width:780px) {
+    html{
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+    
  .main-page {
         flex-direction: column;
         width: 100%;
@@ -456,6 +472,9 @@ form{
     }
     .input-box input , .focus{
         min-width: 150px;
+    }
+    .doc-image img {
+        width: 300px;
     }
 }
 
